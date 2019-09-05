@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AlgorithmsAndDataStructures.iml" filepath="$PROJECT_DIR$/AlgorithmsAndDataStructures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RegressionTesting/RegressionTesting.iml" filepath="$PROJECT_DIR$/RegressionTesting/RegressionTesting.iml" />
       <module fileurl="file://$PROJECT_DIR$/SimpleSorting/SimpleSorting.iml" filepath="$PROJECT_DIR$/SimpleSorting/SimpleSorting.iml" />
     </modules>
   </component>
