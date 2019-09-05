@@ -1,11 +1,11 @@
 package Drivers;
 
 import SortingArrays.ArraysToSort.SortMeArray;
-import SortingArrays.SortingAlgorithms.InsertionSort;
+import SortingArrays.SortingAlgorithms.SelectionSort;
 
 public class InsertionSortArrayDriver {
     public static void main(String[] args) {
-        SortMeArray arr = new SortMeArray(5, new InsertionSort());
+        SortMeArray arr = new SortMeArray(5, new SelectionSort());
         arr.insert(33);
         arr.insert(44);
         arr.insert(22);
