@@ -13,6 +13,17 @@ public class SortMeArray {
         sorter = arraySorter;
     }
 
+    public SortMeArray(long[] a, ArraySorter arraySorter) {
+        arr = a.clone();
+        sorter = arraySorter;
+        numElems = a.length;
+    }
+
+    public void cloneArray(long[] a) {
+        arr = a.clone();
+        numElems = a.length;
+    }
+
     public int getNumElems() {
         return numElems;
     }
