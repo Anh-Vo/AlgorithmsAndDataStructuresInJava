@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1324e98f-692c-49d0-a0d8-f3d59d2cc8e4" name="Default Changelist" comment="Moving files into another directory and finished selection sort">
+      <change afterPath="$PROJECT_DIR$/StacksAndQueue/StacksAndQueue.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StacksAndQueue/src/ArrayBasedStacks/ArrStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StacksAndQueue/src/Drivers/ArrayStackDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StacksAndQueue/src/interfaces/Stackx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleSorting/src/Drivers/InsertionSortArrayDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleSorting/src/Drivers/selectionSortArrayDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleSorting/src/Drivers/InsertionSortDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleSorting/src/Drivers/InsertionSortDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleSorting/src/SortingArrays/ArraysToSort/SortMeArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleSorting/src/SortingArrays/ArraysToSort/SortMeArray.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,58 +28,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimpleSorting/src/SortingArrays/ArraysToSort/SortMeArray.java">
+        <entry file="file://$PROJECT_DIR$/StacksAndQueue/src/ArrayBasedStacks/ArrStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimpleSorting/src/SortingArrays/SortingAlgorithms/BubbleSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+            <state relative-caret-position="210">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SimpleSorting/src/Drivers/InsertionSortDriver.java">
+        <entry file="file://$PROJECT_DIR$/StacksAndQueue/StacksAndQueue.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state>
+              <caret column="2" selection-start-column="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimpleSorting/src/SortingArrays/SortingAlgorithms/InsertionSort.java">
+        <entry file="file://$PROJECT_DIR$/StacksAndQueue/src/interfaces/Stackx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimpleSorting/src/Drivers/BubbleArrayDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimpleSorting/src/Drivers/selectionSortArrayDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="75">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -119,13 +91,16 @@
         <option value="$PROJECT_DIR$/SimpleSorting/src/SortingArrays/ArraysToSort/SortMeArray.java" />
         <option value="$PROJECT_DIR$/SimpleSorting/src/Drivers/selectionSortArrayDriver.java" />
         <option value="$PROJECT_DIR$/SimpleSorting/src/Drivers/InsertionSortDriver.java" />
+        <option value="$PROJECT_DIR$/StacksAndQueue/src/Drivers/ArrayStackDriver.java" />
+        <option value="$PROJECT_DIR$/StacksAndQueue/src/ArrayBasedStacks/ArrStack.java" />
+        <option value="$PROJECT_DIR$/StacksAndQueue/src/interfaces/Stackx.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
+    <option name="x" value="742" />
     <option name="y" value="23" />
-    <option name="width" value="1211" />
+    <option name="width" value="861" />
     <option name="height" value="1007" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -136,7 +111,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,41 +121,34 @@
             <path>
               <item name="AlgorithmsAndDataStructuresInJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="AlgorithmsAndDataStructuresInJava" type="462c0819:PsiDirectoryNode" />
-              <item name="SimpleSorting" type="462c0819:PsiDirectoryNode" />
+              <item name="StacksAndQueue" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AlgorithmsAndDataStructuresInJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="AlgorithmsAndDataStructuresInJava" type="462c0819:PsiDirectoryNode" />
-              <item name="SimpleSorting" type="462c0819:PsiDirectoryNode" />
+              <item name="StacksAndQueue" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AlgorithmsAndDataStructuresInJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="AlgorithmsAndDataStructuresInJava" type="462c0819:PsiDirectoryNode" />
-              <item name="SimpleSorting" type="462c0819:PsiDirectoryNode" />
+              <item name="StacksAndQueue" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Drivers" type="462c0819:PsiDirectoryNode" />
+              <item name="ArrayBasedStacks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AlgorithmsAndDataStructuresInJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="AlgorithmsAndDataStructuresInJava" type="462c0819:PsiDirectoryNode" />
-              <item name="SimpleSorting" type="462c0819:PsiDirectoryNode" />
+              <item name="StacksAndQueue" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SortingArrays" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgorithmsAndDataStructuresInJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlgorithmsAndDataStructuresInJava" type="462c0819:PsiDirectoryNode" />
-              <item name="SimpleSorting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SortingArrays" type="462c0819:PsiDirectoryNode" />
-              <item name="ArraysToSort" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,7 +172,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InsertionSortDriver">
+  <component name="RunManager" selected="Application.ArrayStackDriver">
+    <configuration name="ArrayStackDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Drivers.ArrayStackDriver" />
+      <module name="StacksAndQueue" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Drivers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BubbleArrayDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Drivers.BubbleArrayDriver" />
       <module name="SimpleSorting" />
@@ -258,26 +238,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="selectionSortArrayDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Drivers.selectionSortArrayDriver" />
-      <module name="SimpleSorting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Drivers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayStackDriver" />
         <item itemvalue="Application.InsertionSortDriver" />
         <item itemvalue="Application.BubbleArrayDriver" />
         <item itemvalue="Application.SortTimer" />
         <item itemvalue="Application.SortingArrays" />
-        <item itemvalue="Application.selectionSortArrayDriver" />
       </list>
     </recent_temporary>
   </component>
@@ -303,10 +270,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1211" height="1007" extended-state="0" />
+    <frame x="742" y="23" width="861" height="1007" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945354" visible="true" weight="0.19161677" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945354" visible="true" weight="0.2844933" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -350,13 +317,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleSorting/src/SortingInterfaces/ArraySorter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RegressionTesting/src/SimpleSorting/SortingArrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
@@ -378,17 +338,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleSorting/src/Drivers/selectionSortArrayDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleSorting/src/Drivers/BubbleArrayDriver.java">
+    <entry file="file://$PROJECT_DIR$/SimpleSorting/src/Drivers/InsertionSortDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -399,6 +352,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleSorting/src/SortingArrays/SortingAlgorithms/BubbleSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SimpleSorting/src/SortingArrays/ArraysToSort/SortMeArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -406,20 +366,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleSorting/src/SortingArrays/SortingAlgorithms/BubbleSort.java">
+    <entry file="file://$PROJECT_DIR$/SimpleSorting/src/Drivers/selectionSortArrayDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleSorting/src/Drivers/InsertionSortDriver.java">
+    <entry file="file://$PROJECT_DIR$/SimpleSorting/src/Drivers/BubbleArrayDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleSorting/src/SortingInterfaces/ArraySorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StacksAndQueue/src/Drivers/ArrayStackDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StacksAndQueue/src/interfaces/Stackx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StacksAndQueue/src/ArrayBasedStacks/ArrStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StacksAndQueue/StacksAndQueue.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -474,7 +466,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>RegressionTesting</last-edited>
+          <last-edited>StacksAndQueue</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
