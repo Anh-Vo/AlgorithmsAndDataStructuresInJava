@@ -24,6 +24,11 @@ public class SortMeArray {
         numElems = a.length;
     }
 
+    public long getMedian() {
+        sort();
+        return arr[arr.length/2];
+    }
+
     public int getNumElems() {
         return numElems;
     }

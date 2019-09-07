@@ -3,7 +3,7 @@ package Drivers;
 import SortingArrays.ArraysToSort.SortMeArray;
 import SortingArrays.SortingAlgorithms.SelectionSort;
 
-public class InsertionSortArrayDriver {
+public class selectionSortArrayDriver {
     public static void main(String[] args) {
         SortMeArray arr = new SortMeArray(5, new SelectionSort());
         arr.insert(33);
