@@ -1,4 +1,4 @@
-package SortingInterfaces;
+package Interfaces;
 
 public interface ArraySorter {
     void sort(long[] arr);

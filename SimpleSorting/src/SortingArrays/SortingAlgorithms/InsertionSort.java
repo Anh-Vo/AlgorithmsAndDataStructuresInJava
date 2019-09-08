@@ -1,8 +1,9 @@
 package SortingArrays.SortingAlgorithms;
 
-import SortingInterfaces.ArraySorter;
+import Interfaces.ArraySorter;
 
 public class InsertionSort implements ArraySorter {
+
     @Override
     public void sort(long[] arr) {
         int in;

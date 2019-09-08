@@ -2,7 +2,7 @@ package Drivers;
 
 import SortingArrays.ArraysToSort.SortMeArray;
 import SortingArrays.SortingAlgorithms.BubbleSort;
-import SortingInterfaces.ArraySorter;
+import Interfaces.ArraySorter;
 
 public class BubbleArrayDriver {
     public static void main(String[] args) {

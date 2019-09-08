@@ -1,6 +1,6 @@
 package SortingArrays.SortingAlgorithms;
 
-import SortingInterfaces.ArraySorter;
+import Interfaces.ArraySorter;
 
 public class BubbleSort implements ArraySorter {
 
