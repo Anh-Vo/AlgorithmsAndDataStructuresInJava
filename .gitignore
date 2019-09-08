@@ -1,1 +1,4 @@
 out/
+.ideaworkspace.xml
+*.swp
+*.orig
