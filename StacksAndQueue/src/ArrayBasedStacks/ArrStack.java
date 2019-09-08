@@ -2,28 +2,28 @@ package ArrayBasedStacks;
 
 import interfaces.Stackx;
 
-public class ArrStack implements Stackx {
+public class ArrStack implements Stackx<Character> {
     private int top;
     private int maxSize;
-    private long[] arr;
+    private Character[] arr;
 
     public ArrStack(int max) {
         maxSize = max;
-        arr = new long[maxSize];
+        arr = new Character[maxSize];
         top = -1;
     }
     @Override
-    public void push(long item) {
+    public void push(Character item) {
         arr[++top] = item;
     }
 
     @Override
-    public long pop() {
+    public Character pop() {
         return arr[top--];
     }
 
     @Override
-    public long peek() {
+    public Character peek() {
        return arr[top];
     }
 
@@ -38,9 +38,9 @@ public class ArrStack implements Stackx {
     }
 
     public void display() {
-        int fakeTop = top;
-        while(fakeTop > -1) {
-            System.out.print(arr[fakeTop--] + " ");
+        int fakeCharacterop = top;
+        while(fakeCharacterop > -1) {
+            System.out.print(arr[fakeCharacterop--] + " ");
         }
         System.out.println();
     }
