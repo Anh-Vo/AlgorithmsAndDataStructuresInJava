@@ -2,3 +2,6 @@ out/
 .ideaworkspace.xml
 *.swp
 *.orig
+*/target
+*.jar
+*.war
