@@ -1,4 +1,4 @@
-package ArrayBasedStacks;
+package Stacks.ArrayBasedStacks;
 
 import interfaces.Stackx;
 

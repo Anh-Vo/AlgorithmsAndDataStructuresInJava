@@ -1,6 +1,6 @@
 package Drivers;
 
-import ArrayBasedStacks.ArrStack;
+import Stacks.ArrayBasedStacks.ArrStack;
 
 public class ArrayStackDriver {
     public static void main(String[] args) {

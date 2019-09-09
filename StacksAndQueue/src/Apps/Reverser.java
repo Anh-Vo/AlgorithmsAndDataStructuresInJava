@@ -1,5 +1,6 @@
-package ArrayBasedStacks;
+package Apps;
 
+import Stacks.ArrayBasedStacks.ArrStack;
 import interfaces.Stackx;
 
 public class Reverser {
