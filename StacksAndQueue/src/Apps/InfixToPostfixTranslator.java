@@ -27,19 +27,40 @@ public class InfixToPostfixTranslator {
 
     public String translate() {
         char currChar;
+        char topOp;
+        int result;
+        int lastInsertion = 0;
         for(int i = 0; i < infixExpression.length; i++) {
             currChar = infixExpression[i]; // Read the char
-            if(!operators.containsKey(currChar)) {
+            if(!operators.containsKey(currChar)) { // If not an operator
                 postfixExpression[i] = currChar;
-            } else {
+                lastInsertion = i;
+            } else { // Is an operator
                 if(stack.isEmpty()) {
-                    stack.push(currChar);
-                } else {
-
+                    stack.push(currChar); // Don't need to check precedence
+                } else { // Check Precedence
+                    topOp = stack.pop();
+                    result = comparePrecendence(topOp, currChar);
+                    if(result >= 0) {
+                        stack.push(topOp); // topOp has higher precendence
+                        break;
+                    } else if(result < 0) {
+                        stack.push(currChar); // topOp has lower precendence
+                        stack.push(topOp);
+                    }
                 }
             }
         }
-        return null;
+
+        while(!stack.isEmpty()) {
+            postfixExpression[++lastInsertion] = stack.pop();
+        }
+
+        return postfixExpression.toString();
+    }
+
+    private int comparePrecendence(char a, char b) {
+        return (operators.get(a) - operators.get(b));
     }
 
 }
