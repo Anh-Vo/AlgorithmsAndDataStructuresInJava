@@ -6,9 +6,8 @@ import java.util.Map;
 
 public class InfixToPostfixTranslator {
     private ArrStack stack;
-    private char[] infixExpression;
-    private char[] postfixExpression;
-    private char[] operands = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    private String infixExpression;
+    private StringBuilder postfixExpression;
     private Map<Character, Integer> operators = Map.of(
             '(', 1,
             ')', 1,
@@ -21,39 +20,43 @@ public class InfixToPostfixTranslator {
 
     public InfixToPostfixTranslator(String s) {
        stack = new ArrStack(s.length());
-       infixExpression = s.toCharArray();
-       postfixExpression = new char[infixExpression.length];
+       infixExpression = s;
+       postfixExpression = new StringBuilder();
+    }
+
+    public String getInfixExpression() {
+        return new String(infixExpression);
     }
 
     public String translate() {
-        char currChar;
-        char topOp;
+        char curr;
+        char top;
         int result;
-        int lastInsertion = 0;
-        for(int i = 0; i < infixExpression.length; i++) {
-            currChar = infixExpression[i]; // Read the char
-            if(!operators.containsKey(currChar)) { // If not an operator
-                postfixExpression[i] = currChar;
-                lastInsertion = i;
-            } else { // Is an operator
-                if(stack.isEmpty()) {
-                    stack.push(currChar); // Don't need to check precedence
-                } else { // Check Precedence
-                    topOp = stack.pop();
-                    result = comparePrecendence(topOp, currChar);
-                    if(result >= 0) {
-                        stack.push(topOp); // topOp has higher precendence
-                        break;
-                    } else if(result < 0) {
-                        stack.push(currChar); // topOp has lower precendence
-                        stack.push(topOp);
-                    }
+        for(int i = 0; i < infixExpression.length(); i++) {
+            curr = infixExpression.charAt(i);
+            if(!operators.containsKey(curr)) {
+                postfixExpression.append(curr); //append to output
+            } else if(curr == '(') {
+               stack.push(curr);
+            } else if(curr == ')') {
+                while(!stack.isEmpty() && stack.peek() != '(') {
+                    postfixExpression.append(stack.pop());
                 }
+                if(!stack.isEmpty() && stack.peek() != '(') {
+                    return null;
+                } else if(!stack.isEmpty()) {
+                    stack.pop();
+                }
+            } else if(operators.containsKey(curr)) {
+                if(!stack.isEmpty() && comparePrecendence(curr, stack.peek()) > 0) {
+                    postfixExpression.append(stack.pop());
+                }
+                stack.push(curr);
             }
         }
 
-        while(!stack.isEmpty()) {
-            postfixExpression[++lastInsertion] = stack.pop();
+        while (!stack.isEmpty()) {
+            postfixExpression.append(stack.pop());
         }
 
         return postfixExpression.toString();
