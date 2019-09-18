@@ -1,9 +1,9 @@
 package interfaces;
 
-public interface Stackx<T> {
-    void push(T item);
-    T pop();
-    T peek();
+public interface Stackx<E> {
+    void push(E item);
+    E pop();
+    E peek();
     boolean isEmpty();
     boolean isFull();
 }

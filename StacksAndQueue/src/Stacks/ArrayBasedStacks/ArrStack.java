@@ -12,6 +12,7 @@ public class ArrStack implements Stackx<Character> {
         arr = new Character[maxSize];
         top = -1;
     }
+
     @Override
     public void push(Character item) {
         arr[++top] = item;

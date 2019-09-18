@@ -12,5 +12,13 @@ public class InfixToPostfixDriver {
         t = new InfixToPostfixTranslator(test);
         System.out.println(t.getInfixExpression());
         System.out.println(t.translate());
+        test ="A+B*(C^D-E)";
+        t = new InfixToPostfixTranslator(test);
+        System.out.println(t.getInfixExpression());
+        System.out.println(t.translate());
+        test ="A*B+C";
+        t = new InfixToPostfixTranslator(test);
+        System.out.println(t.getInfixExpression());
+        System.out.println(t.translate());
     }
 }
