@@ -1,6 +1,11 @@
 package Lists;
 
-public class UnorderedSinglyLinkedList<E> {
+import java.util.ConcurrentModificationException;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+public class UnorderedSinglyLinkedList<E> implements Iterable<E> {
+
     private class Node<E> {
         E data;
         Node<E> next;
@@ -12,15 +17,20 @@ public class UnorderedSinglyLinkedList<E> {
     }
 
     private Node<E> head, tail;
+    private long modificationCounter;
+    private int currentSize;
 
     public UnorderedSinglyLinkedList() {
         head = tail = new Node<E>(null);
+        modificationCounter = currentSize = 0;
     }
 
     public void insert(E data) {
         Node<E> newNode = new Node<E>(data);
         newNode.next = head.next;
         head.next = newNode;
+        currentSize++;
+        modificationCounter++;
     }
 
     public void displayList() {
@@ -52,6 +62,7 @@ public class UnorderedSinglyLinkedList<E> {
                 if(prev == head) {
                    head.next = prev.next;
                 }
+                modificationCounter++;
                 return delete(curr, prev);
             }
             curr = curr.next;
@@ -60,15 +71,49 @@ public class UnorderedSinglyLinkedList<E> {
         return null;
     }
 
-//    public int deleteAll(E data) {
-//        Node<E> curr = head.next;
-//
-//    }
+    @Override
+    public Iterator<E> iterator() {
+       return new IteratorHelper();
+    }
 
     private E delete(Node<E> curr, Node<E> prev) {
        E temp = curr.data;
        prev.next = curr.next;
+       currentSize--;
        return temp;
+    }
+
+    class IteratorHelper implements Iterator<E> {
+        Node<E> current;
+        long stateCheck;
+
+        public IteratorHelper() {
+            current = head;
+            stateCheck = 0;
+        }
+
+        @Override
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override
+        public boolean hasNext() {
+            if (stateCheck != modificationCounter) {
+                throw new ConcurrentModificationException();
+            }
+            return current.next != null;
+        }
+
+        @Override
+        public E next() {
+            if(!hasNext()) {
+                throw new NoSuchElementException();
+            }
+            E data = current.next.data;
+            current = current.next;
+            return data;
+        }
     }
 
 }

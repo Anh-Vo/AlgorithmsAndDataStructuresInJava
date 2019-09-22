@@ -2,6 +2,8 @@ package SinglyLinkedListDrivers;
 
 import Lists.UnorderedSinglyLinkedList;
 
+import java.util.Iterator;
+
 public class UnorderedSinglyLinkedListDriver {
     public static void main(String[] args) {
         UnorderedSinglyLinkedList<Integer> list = new UnorderedSinglyLinkedList<>();
@@ -20,23 +22,12 @@ public class UnorderedSinglyLinkedListDriver {
         list2.insert(1);
         list2.displayList();
 
-        System.out.println("Delete 5");
-        System.out.println(list.delete(5));
-        System.out.println(list.contains(5));
-        list.displayList();
+        System.out.println("Testing Iterator: ");
+        Iterator<Integer> it = list.iterator();
+        for(int i : list) {
+            System.out.println(i);
+        }
 
-        System.out.println("Delete 2");
-        System.out.println(list.delete(2));
-        System.out.println(list.contains(2));
-        list.displayList();
 
-        System.out.println("Insert 5");
-        list.insert(5);
-        list.displayList();
-
-        System.out.println("Delete 4");
-        System.out.println(list.delete(4));
-        System.out.println(list.contains(4));
-        list.displayList();
     }
 }
